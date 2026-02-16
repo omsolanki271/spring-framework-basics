@@ -1,0 +1,27 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# Eclipse
+.metadata/
+.settings/
+.project
+.classpath
+
+# IntelliJ (if opened in IDEA)
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- EMP class -->
+	<bean id="EMP1" class="com.springcore.collections.Emp" >
+		<property name="ename" value="om" />
+
+		<property name="phone">
+			<list>
+				<value>1111111111</value>
+				<value>2222222222</value>
+			</list>
+		</property>
+
+		<property name="address">
+			<set>
+				<value>Delhi</value>
+				<value>Lucknow</value>
+				<value>Kanpur</value>
+
+			</set>
+		</property>
+
+		<property name="courses">
+			<map>
+				<entry key="java" value="1 month"/>
+				<entry key="python" value="1.5 month"/>
+				<entry key="C" value="3 month"/>
+			</map>
+		</property>
+		
+		<property name="authentication">
+			<props>
+				<prop key="name">Om</prop>
+				<prop key="email">om@gmail.com</prop>
+				<prop key="password">123</prop>
+			</props>
+		</property>
+
+	</bean>
+</beans>
+
