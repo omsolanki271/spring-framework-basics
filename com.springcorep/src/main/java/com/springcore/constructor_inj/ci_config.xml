@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- <bean class="com.springcore.constructor_inj.Certi" name="cer" c:name="Java 
+		Devloper" /> <bean class="com.springcore.constructor_inj.Person" name="cinj" 
+		c:name="Solanki Om" c:personid="22" c:obj-ref="cer" /> -->
+
+
+
+	<bean class="com.springcore.constructor_inj.Certi" name="cer">
+		<constructor-arg value="Java Devloper" />
+	</bean>
+
+	<bean class="com.springcore.constructor_inj.Person" name="cinj">
+		<constructor-arg value="Solanki om" />
+		<constructor-arg value="22" type="int" />
+		<constructor-arg ref="cer" />
+		<constructor-arg>
+			<list>
+				<value>1111111111</value>
+				<value>2222222222</value>
+				<value>3333333333</value>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<!-- <constructor-arg index="0" value="John"/> <constructor-arg index="1" 
+		value="10"/> <constructor-arg index="2" ref="certiBean"/> -->
+</beans>
+

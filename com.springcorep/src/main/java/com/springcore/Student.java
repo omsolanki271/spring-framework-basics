@@ -6,32 +6,32 @@ public class Student {
 	private String studentAddress;
 
 	public int getStudentId() {
-		System.out.println("call getstudent id ......");
+		//System.out.println("call getstudent id ......");
 		return studentId;
 	}
 
 	public void setStudentId(int studentId) {
-		System.out.println("call setstudent id ......");
+		//System.out.println("call setstudent id ......");
 		this.studentId = studentId;
 	}
 
 	public String getStudentName() {
-		System.out.println("call getstudent name ......");
+		//System.out.println("call getstudent name ......");
 		return studentName;
 	}
 
 	public void setStudentName(String studentName) {
-		System.out.println("call setstudent name ......");
+		//System.out.println("call setstudent name ......");
 		this.studentName = studentName;
 	}
 
 	public String getStudentAddress() {
-		System.out.println("call getstudent Add ......");
+		//System.out.println("call getstudent Add ......");
 		return studentAddress;
 	}
 
 	public void setStudentAddress(String studentAddress) {
-		System.out.println("call setstudent Add ......");
+		//System.out.println("call setstudent Add ......");
 		this.studentAddress = studentAddress;
 	}
 
