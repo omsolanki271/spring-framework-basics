@@ -10,10 +10,17 @@ public class Test {
 		
 		//ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lijfecycle/life_config.xml");
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lijfecycle/life_config.xml");
-		Product item = (Product)context.getBean("p1");
-		System.out.println(item);
 		//use for destory() method call taht avaiable in AbstractApp class
 		context.registerShutdownHook();
+		System.out.println("++++++++++++ Using XML ++++++++++++++");
+		Product item = (Product)context.getBean("p1");
+		System.out.println(item);
+		System.out.println("++++++++++++ Using Interface ++++++++++++++");
+		Product2 item2= (Product2) context.getBean("p2");
+		System.out.println(item2);
+		System.out.println("++++++++++++ Using Annotation ++++++++++++++");
+		Product3 item3= (Product3) context.getBean("p3");
+		System.out.println(item3);
 		
 	}
 

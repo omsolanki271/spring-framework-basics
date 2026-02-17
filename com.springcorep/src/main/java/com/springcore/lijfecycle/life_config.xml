@@ -9,8 +9,24 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean class="com.springcore.lijfecycle.Product" name="p1" init-method="init" destroy-method="destory">
-		<property name="price" value="200"/>
-	</bean>	
+	<!-- all Annotation Enable for All Annotations -->
+
+	<context:annotation-config />
+
+
+
+
+	<bean class="com.springcore.lijfecycle.Product" name="p1"
+		init-method="init" destroy-method="destroy">
+		<property name="price" value="200" />
+	</bean>
+	<bean class="com.springcore.lijfecycle.Product2" name="p2"
+		init-method="afterPropertiesSet" destroy-method="destroy">
+		<property name="price" value="333" />
+	</bean>
+	<bean class="com.springcore.lijfecycle.Product3" name="p3"
+		init-method="start" destroy-method="end">
+		<property name="price" value="553" />
+	</bean>
 </beans>
 

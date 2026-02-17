@@ -1,6 +1,9 @@
 package com.springcore.lijfecycle;
 
-public class Product {
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+public class Product3 {
 	private double price;
 
 	public double getPrice() {
@@ -11,7 +14,7 @@ public class Product {
 		this.price = price;
 	}
 
-	public Product() {
+	public Product3() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -21,14 +24,16 @@ public class Product {
 		return "Product [price=" + price + "]";
 	}
 	
-	public void init()
+	@PostConstruct
+	public void start()
 	{
-		System.out.println("Inside init mehtod call....");
+		System.out.println("init method call for @annotation");
 	}
 	
-	public void destroy()
+	@PreDestroy
+	public void end()
 	{
-		System.out.println("Inside destroy method call...");
+		System.out.println("destroy method call for @annotation");
 	}
 	
 }
