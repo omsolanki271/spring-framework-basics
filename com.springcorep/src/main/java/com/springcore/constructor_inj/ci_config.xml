@@ -14,7 +14,7 @@
 		Devloper" /> <bean class="com.springcore.constructor_inj.Person" name="cinj" 
 		c:name="Solanki Om" c:personid="22" c:obj-ref="cer" /> -->
 
-
+	
 
 	<bean class="com.springcore.constructor_inj.Certi" name="cer">
 		<constructor-arg value="Java Devloper" />
@@ -33,6 +33,10 @@
 		</constructor-arg>
 	</bean>
 
+	<bean class="com.springcore.constructor_inj.Addition" name="abiguty">
+		<constructor-arg value="14" index="0" type="int" />
+		<constructor-arg value="11" index="1" type="int" />
+	</bean>
 	<!-- <constructor-arg index="0" value="John"/> <constructor-arg index="1" 
 		value="10"/> <constructor-arg index="2" ref="certiBean"/> -->
 </beans>
