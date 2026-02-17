@@ -34,8 +34,15 @@
 	</bean>
 
 	<bean class="com.springcore.constructor_inj.Addition" name="abiguty">
-		<constructor-arg value="14" index="0" type="int" />
-		<constructor-arg value="11" index="1" type="int" />
+		<constructor-arg value="14"  />
+		<constructor-arg value="11"  />
+		<!-- best way to give value using type and index  -->
+		
+		<!--
+			<constructor-arg value="11"  type="int" index=0/>
+			<constructor-arg value="21"  type="int" index=1/>
+		 -->
+		 
 	</bean>
 	<!-- <constructor-arg index="0" value="John"/> <constructor-arg index="1" 
 		value="10"/> <constructor-arg index="2" ref="certiBean"/> -->
