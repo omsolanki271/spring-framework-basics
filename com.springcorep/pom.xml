@@ -20,6 +20,14 @@
 
   <dependencies>
 
+	<!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-core -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-core</artifactId>
+	    <version>5.2.25.RELEASE</version>
+	    <scope>compile</scope>
+	</dependency>
+	
     <!-- Spring Context -->
     <dependency>
       <groupId>org.springframework</groupId>
