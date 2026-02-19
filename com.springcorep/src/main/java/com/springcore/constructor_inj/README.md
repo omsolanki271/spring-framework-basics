@@ -1,7 +1,3 @@
-
-Here’s a clean, **README.md** version of your *Spring Framework – Constructor Injection* project with only usable, structured points:
-
-```markdown
 # Spring Framework – Constructor Injection
 
 ## 📌 Overview

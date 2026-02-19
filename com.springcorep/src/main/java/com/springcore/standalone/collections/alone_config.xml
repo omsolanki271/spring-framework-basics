@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- standalone list -->
+	
+	<util:list list-class="java.util.LinkedList" id="e-item">
+		<value>Leptop</value>
+		<value>TV</value>
+		<value>Mobile</value>
+		<value>Tablet</value>
+	</util:list>
+	
+	<!-- standalone map -->
+	
+	<util:map map-class="java.util.HashMap" id="e-item-price">
+		<entry key="Leptop" value="60000"/>
+		<entry key="TV" value="15000"/>
+		<entry key="Mobile" value="20000"/>
+		<entry key="Tablet" value="26000"/>
+	</util:map>
+	
+	<!-- standalone properties -->
+	
+	<util:properties id="dbcon">
+		<prop key="driver">com.mysql.jdbc.driver</prop>
+		<prop key="username">OM SOLANKI</prop>
+		<prop key="password">123</prop>
+		<prop key="url">mysql:jdbc://localhost:3306/database</prop>
+	</util:properties>
+	
+	<bean class="com.springcore.standalone.collections.Product" name="pitem">
+		<property name="item">
+			<ref bean="e-item"/>
+		</property>
+		
+		<property name="price">
+			<ref bean="e-item-price"/>
+		</property>
+		<property name="properties" ref="dbcon"/>
+	</bean>
+	
+	
+</beans>
