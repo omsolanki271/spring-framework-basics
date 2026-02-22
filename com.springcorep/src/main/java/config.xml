@@ -10,7 +10,7 @@
        http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- First  -->
-	<bean class="com.springcore.Student" name="student1">
+	<bean class="com.springcore.setter_inj.Student" name="student1">
 		<property name="studentId">
 			<value>2530100</value>
 		</property>
@@ -26,13 +26,13 @@
 
 	 <!-- Second Way -->
 
-	<bean class="com.springcore.Student" name="student2">
+	<bean class="com.springcore.setter_inj.Student" name="student2">
 		<property name="studentId" value="2530101" />
 		<property name="studentName" value="john" />
 		<property name="studentAddress" value="Mumbai" />
 	</bean>
 	
-	<bean class="com.springcore.Student" name="student3" p:studentId ="2523241" p:studentName ="Bob"  p:studentAddress ="Mumbai"/>
+	<bean class="com.springcore.setter_inj.Student" name="student3" p:studentId ="2523241" p:studentName ="Bob"  p:studentAddress ="Mumbai"/>
 	
 </beans>
 

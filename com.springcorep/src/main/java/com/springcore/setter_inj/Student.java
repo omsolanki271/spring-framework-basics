@@ -1,4 +1,4 @@
-package com.springcore;
+package com.springcore.setter_inj;
 
 public class Student {
 	private int studentId;
