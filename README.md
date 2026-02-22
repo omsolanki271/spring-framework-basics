@@ -1,53 +1,129 @@
-# Spring Framework Basics
+# 🌱 Spring Framework Basics
 
-## 📌 Overview
-A Maven-based **Spring Core** project demonstrating fundamental **Dependency Injection** concepts using XML configuration.  
-This project covers core Spring container features including **Setter Injection, Constructor Injection, Collection Injection, and Reference Injection.**  
-It is designed to build a strong foundation in Spring Framework before moving to advanced topics like **Spring MVC** and **Spring Boot.**
+A Maven-based **Spring Core** project demonstrating fundamental concepts of the **Spring IoC Container** and **Dependency Injection (DI)** using XML configuration.
+
+This project is built to strengthen core backend fundamentals before moving to advanced technologies like **Spring MVC** and **Spring Boot**.
 
 ---
 
-## 📌 Concepts Covered
-- Setter-Based Dependency Injection  
-- Constructor-Based Dependency Injection  
-- Collection Injection (List, Set, Map, Properties)  
-- Reference Type Injection (Bean-to-Bean Dependency)  
-- XML-based Bean Configuration  
-- Spring IoC Container  
+## 📌 Project Overview
+
+This project covers the core features of the Spring Framework including:
+
+- Inversion of Control (IoC)
+- Dependency Injection (DI)
+- Bean Lifecycle Management
+- Autowiring
+- Spring Expression Language (SpEL)
+- Java-based Configuration
+
+It is designed as a hands-on practice project to understand how Spring manages object creation and dependency resolution internally.
+
+---
+
+## 🧠 Concepts Implemented
+
+### 🔹 Dependency Injection
+- Setter Injection
+- Constructor Injection
+- Reference Injection (Bean-to-Bean Dependency)
+
+### 🔹 Collection Injection
+- List
+- Set
+- Map
+- Properties
+
+### 🔹 Autowiring
+- XML-based Autowiring
+- Annotation-based Autowiring
+
+### 🔹 Additional Spring Features
+- Bean Lifecycle Methods
+- Standalone Collections
+- Stereotype Annotations
+- Java Configuration (@Configuration, @Bean)
+- Spring Expression Language (SpEL)
 
 ---
 
 ## 📂 Project Structure
-The project follows standard **Maven structure**:
 
-- `src/main/java` → Java source files  
-- `src/test/java` → Test classes  
-- `pom.xml` → Maven configuration  
-- XML configuration files for Spring container  
+This project follows standard **Maven directory structure**:
+
+```
+
+com.springcorep
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com.springcore
+│   │   │       ├── setter_inj
+│   │   │       ├── constructor_inj
+│   │   │       ├── collections
+│   │   │       ├── auto
+│   │   │       ├── lifecycle
+│   │   │       ├── ref
+│   │   │       ├── spel
+│   │   │       ├── javaconfig
+│   │   │       └── stereotype
+│   │   └── resources
+│   │       └── config.xml
+│   └── test
+├── pom.xml
+└── README.md
+
+```
 
 ---
 
-## 🚀 How It Works
-1. The Spring container loads the XML configuration file using **ApplicationContext**.  
-2. Beans are created and dependencies are injected automatically through **setter** or **constructor** methods.  
-3. Collection and reference dependencies are managed internally by the **IoC container**.  
+## ⚙️ Technologies Used
+
+- Java (JDK 8+)
+- Spring Core Framework
+- Maven
+- XML Configuration
+- Eclipse IDE
 
 ---
 
-## 🎯 Learning Objective
-This project focuses on understanding how Spring manages **object creation and dependency injection.**  
-It strengthens backend fundamentals and prepares the foundation for **enterprise-level Spring development.**
+## 🚀 How to Run the Project
+
+1. Clone the repository
+2. Open the project in Eclipse / IntelliJ
+3. Ensure Maven dependencies are downloaded
+4. Run the `App.java` OR `Test.java`file from any module
+5. Observe dependency injection working via Spring container
 
 ---
 
-## 🛠 Tech Stack
-- Java  
-- Spring Core  
-- Maven  
-- XML Configuration  
+## 🎯 Learning Objectives
+
+This project helps in understanding:
+
+- How Spring IoC container works internally
+- How objects are created and managed by Spring
+- How dependencies are injected using XML and annotations
+- The difference between constructor and setter injection
+- Real-world structure of a Maven-based Spring project
+
+---
+
+## 📈 Why This Project Matters
+
+Understanding Spring Core deeply is essential before learning:
+
+- Spring MVC
+- Spring Boot
+- Spring Data JPA
+- Microservices Architecture
+
+This project builds that foundation.
 
 ---
 
 ## 👨‍💻 Author
+
 **Om Solanki**  
-*MCA Student | Java Backend Learner*
+MCA Student | Java Backend Developer  
+Passionate about building strong backend fundamentals with Java & Spring
