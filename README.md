@@ -145,4 +145,4 @@ This project builds that **strong foundation**.
 
 **Om Solanki**
 MCA Student | Java Backend Developer
-Passionate about building strong **backend fundamentals with Java & Spring**.
+
