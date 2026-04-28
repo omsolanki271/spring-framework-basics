@@ -7,6 +7,7 @@ This project is built to strengthen **core backend fundamentals** before moving 
 ---
 
 ## 📌 Project Overview
+This project demonstrates the core features of the **Spring Framework**, focusing on how the **Spring IoC Container** manages object creation and dependencies.
 
 This project covers the core features of the **Spring Framework**, including:
 
