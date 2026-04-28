@@ -2,7 +2,7 @@ package com.springcore.coupling.loose_anno;
 
 import org.springframework.stereotype.Component;
 
-@Component("Userweb")
+@Component("UserwebPro")
 public class WebServicesDataProvider implements UserDataProvider{
 
 	@Override

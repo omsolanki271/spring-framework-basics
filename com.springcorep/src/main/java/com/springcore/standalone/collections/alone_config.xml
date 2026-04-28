@@ -50,5 +50,4 @@
 		<property name="properties" ref="dbcon"/>
 	</bean>
 	
-	
 </beans>

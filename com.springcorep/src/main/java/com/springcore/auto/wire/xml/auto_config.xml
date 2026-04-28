@@ -14,7 +14,6 @@
 		<property name="city" value="Gandinagar" />
 	</bean>
 
-
 	<bean class="com.springcore.auto.wire.xml.Emp" name="Emp1"
 		autowire="byType" /> 		<!-- use byname , use constructor by constructor -->
 
